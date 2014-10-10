@@ -1,0 +1,50 @@
+body {
+    background:  #4C6472;
+font-family: 'Roboto', sans-serif; 
+}
+
+
+.port {
+  float: left;
+  margin: 25px 15px 15px 15px;
+  
+}
+
+
+#edu {
+  
+  margin: 25px 17px 20px 15px;
+  
+}
+
+#exp {
+  
+  margin: 90px 17px 20px 15px;
+  
+}
+
+#me {
+  
+  margin: 70px 17px 20px 15px;
+  
+}
+
+#cont {
+  
+  margin: 27px 17px 20px 15px;}
+
+input.error {
+  border-color: red;
+   
+}
+input.error:focus {
+  border-color: red;
+  }
+
+  textarea.error {
+  border-color: red;
+   
+}
+textarea.error:focus {
+  border-color: red;
+  }
