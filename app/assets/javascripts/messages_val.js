@@ -58,6 +58,20 @@ $(function(){
 
  
   buttonSwitcher();
+
+  $("#eng").click(function(e){
+    console.log("ok");
+    $("#site").load("app/views/english.html.erb")
+  })
+
+
+ 
+ $(document).ajaxSuccess(function(){
+  console.log("ok");
+        alert("Twoja wiadomość została wysłana.");
+        $("form")[0].reset();
+        });
+
    
 
 

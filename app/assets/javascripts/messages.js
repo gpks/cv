@@ -1,7 +1,13 @@
- 
-  $("[name='commit']").on("ajax:success", function() {
-    console.log("ok");
-  })
+ // $(document).ready(function () {
+ //  console.log("ok")
+      // $("form").ajaxSuccess(function(){
+      //   alert("AJAX request successfully completed");
+      //   });
+
+// console.log($("form"))
+//     $("form").ajaxSuccess ( function () {
+//     console.log("ok");
+//   })
 
 
 
@@ -15,17 +21,18 @@
   //   })
    
   //   console.log("ok")
-  //   return false; // prevents normal behaviour
-   
-    // $.ajax({
-    //   type: "POST",
-    //   url: "messages",
-    //   data: dataString,
-      
+  // //   return false; // prevents normal behaviour
+  //  $("[name='commit']").on("click", function(e){
+  //   console.log("ok")
+  // });
+//     $.ajax({
+//       type: "POST",
+//       url: "messages",
+//       data: dataString,     
   
-    // });
-    // alert("ok");
-    // return false;
+//     }).done(function() { alert("success")});
+//     alert("ok");
+//     return false;
 // });
  
 

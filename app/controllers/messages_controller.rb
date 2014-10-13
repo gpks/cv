@@ -6,10 +6,14 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create(message_params)
-    respond_to do |format|
-      format.html 
-      format.js
-    end
+
+    
+       
+      # respond_to do |format|
+      #   format.html
+      #   format.js
+      # end
+   
 
   end
 
