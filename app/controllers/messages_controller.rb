@@ -5,12 +5,11 @@ class MessagesController < ApplicationController
   
 
   def create
-    @message = Message.new(message_params)
-    if @message.save
-        redirect_to messages_path
-      else
-        render :new
-      end
+    @message = Message.create(message_params)
+    respond_to do |format|
+      format.html 
+      format.js
+    end
 
   end
 
