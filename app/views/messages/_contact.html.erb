@@ -1,31 +1,17 @@
    <div class="row" id= "partial">
-   form
         <div class="col-xs-4 col-sm-3"><a name="contact" ></a><h3 id = "cont">Kontakt</h3></div>
         <div class="col-xs-4 col-sm-6">
-
-         <form class="form-horizontal" role="form">
-         <%= form_for(@message) do |f| %>
- 
-
-
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
-  </div>
-  
-  <div class="actions">
-    <%= f.submit %>
-    <% end %>
-  </div>
+        
+         <%= simple_form_for @message do |f| %> 
+  <%= f.input :name, label: false, placeholder: "E-mail lub telefon", :input_html => {:maxlength => 15, :size => 60}  %>
+  <br>
+  <%= f.input :text, label: false, placeholder: "Wiadomość", :input_html => {:rows =>4, :cols =>60} %>
+  <%= f.button :submit, "Wyślij wiadomość", class: "btn btn-primary" %>
+<% end %>
          
 
         
-         </form>
+        
 
 
 
@@ -33,7 +19,7 @@
      
 
 
-        </div> 
+        </div>
 
 
       </div>

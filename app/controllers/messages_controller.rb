@@ -1,16 +1,13 @@
 class MessagesController < ApplicationController
   def index
-    
+     @message = Message.new
   end
-  def new
-    @message = Message.new
-  end
-
+  
 
   def create
-    @message = Message.new(car_params)
+    @message = Message.new(message_params)
     if @message.save
-        redirect_to messages_index_path
+        redirect_to messages_path
       else
         render :new
       end
@@ -20,7 +17,7 @@ class MessagesController < ApplicationController
    private
     
 
-    def car_params
+    def message_params
       params.require(:message).permit(:name, :text)
     end
 end

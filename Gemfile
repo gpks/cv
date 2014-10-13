@@ -31,6 +31,7 @@ gem 'spring',        group: :development
 gem "font-awesome-rails"
 gem "better_errors"
 gem 'rails_12factor', group: :production
+gem "simple_form"
 
 
 # Use ActiveModel has_secure_password
