@@ -7,6 +7,8 @@ class MessagesController < ApplicationController
   def create
     @message = Message.create(message_params)
 
+    Notifictaions.hello.deliver
+
     
        
       # respond_to do |format|
